@@ -243,7 +243,7 @@ async function toctoc () {
 
 			const newProps = []
 			// propsLi.length
-			for (let i = 0; i < 1; i++) {
+			for (let i = 0; i < propsLi.length; i++) {
 				const propLi = propsLi[i]
 				const prop = {}
 
