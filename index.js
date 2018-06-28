@@ -3,8 +3,8 @@ const querystring = require('querystring')
 const fs = require('fs')
 
 //recieve this value from cli param
-const propType = process.argv[2]
-const query = process.argv[3]
+// const propType = process.argv[2]
+const csv = process.argv[2]
 
 const params = {
 	animacion: false,
@@ -234,28 +234,6 @@ async function toctoc () {
 		// await searchButton.click()
 		
 		// await page.waitFor(10000)
-		
-		await page.screenshot({path: 'page_1.png'})
-		//redirect to logged page
-
-		// const logged
-		/*
-		prop {
-			id string
-			locality string
-			link string
-			type string
-			property_name string
-			email string
-			phone string
-			value number
-			created_at date
-			rooms number
-			baths number
-			m2_useful number
-			m2_build
-		}
-		*/
 
 		await page.screenshot({path: 'example.png'})
 
@@ -265,7 +243,7 @@ async function toctoc () {
 
 			const newProps = []
 			// propsLi.length
-			for (let i = 0; i < propsLi.length; i++) {
+			for (let i = 0; i < 1; i++) {
 				const propLi = propsLi[i]
 				const prop = {}
 
@@ -398,7 +376,6 @@ async function toctoc () {
 				await pageProp.waitFor(3000)
 
 				// await pageProp.screenshot({path: 'example_antes3.png'})
-				
 
 				const contactSelector = '#btnVerDatosContacto'
 				// await pageProp.screenshot({path: 'example_1.png'})
@@ -428,7 +405,7 @@ async function toctoc () {
 			}
 		}
 
-		fs.writeFileSync('out.csv', ConvertToCSV(props))
+		fs.writeFileSync(csv, ConvertToCSV(props))
 		
 		await browser.close()
 	} catch (err) {
