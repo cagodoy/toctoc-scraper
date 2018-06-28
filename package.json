@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "git pull origin master",
+    "start": "node index.js"
   },
   "author": "Camilo Acuña Godoy <camilo.aku@gmail.com> (https://github.com/cagodoy)",
   "license": "ISC",
