@@ -1,0 +1,29 @@
+{
+  "header": {
+    "version": "1.0",
+    "type": "actor",
+    "payloadChecksum": "8ec5bbade46dfa1dfc9e151dbae64aafc044acbd44d18dc62d0e0ba5c0b50408",
+    "signatures": [
+      {
+        "keyId": "agent:security-audit",
+        "role": "author",
+        "notes": "Actor registration",
+        "signature": "w7DouvUw82+hDYS6bJwIjCuMKRPMNVNlRb6hDIymSJ3OM2xFh/2Z/sIe8IP8n2W8/Xzun+OeGPSTtKvfiY+1DA==",
+        "timestamp": 1777941320
+      }
+    ]
+  },
+  "payload": {
+    "id": "agent:security-audit",
+    "type": "agent",
+    "displayName": "Security Audit",
+    "publicKey": "OBQ/Mw6akyK7eHK8IlSLuDz/7j5O1akHdveUjaWu34Q=",
+    "roles": [
+      "specialist"
+    ],
+    "status": "active",
+    "metadata": {
+      "purpose": "audit"
+    }
+  }
+}
